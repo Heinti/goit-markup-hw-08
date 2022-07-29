@@ -1,0 +1,42 @@
+/* ----------------- */
+
+/* 2ND PAGE- PORTFOLIO */
+
+/* ----------------- */
+
+.portfolio-section {
+  background-color: var(--white-bg-color);
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-btn {
+  color: var(--primary-color);
+  background-color: var(--grey-bg-color);
+
+  @include text(500, 16px, 1.62, null);
+  text-align: center;
+  cursor: pointer;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+
+  transition: var(--anim);
+}
+
+.portfolio_item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white-color);
+  background-color: var(--accent-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}

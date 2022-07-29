@@ -1,0 +1,27 @@
+// utilis styles
+@import "./utilis/vars";
+@import "./utilis/visually-hidden";
+@import "./utilis/mixin";
+// base
+@import "./base/common";
+@import "./base/reset";
+// component
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/section";
+@import "./components/logo";
+@import "./components/titles";
+@import "./components/sotials";
+@import "./components/backdrop";
+@import "./components/modal";
+
+// layout
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/benefits";
+@import "./layouts/working";
+@import "./layouts/team";
+@import "./layouts/customers";
+@import "./layouts/portfolio";
+@import "./layouts/gallery";
+@import "./layouts/footer";

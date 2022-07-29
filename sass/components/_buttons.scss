@@ -1,0 +1,29 @@
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+  
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    padding: 10px 32px;
+    border: none;
+  
+    transition: var(--anim);
+
+    &:hover,
+    &:focus {
+      background-color: var(--hero-brn-bg);
+      cursor: pointer;
+    }
+    
+    &--subscr{
+        position: relative;
+        display: inline-flex;
+        margin-left: 12px;
+      
+    }
+  }

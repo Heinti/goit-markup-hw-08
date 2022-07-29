@@ -1,0 +1,22 @@
+.nav__logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-family: var(--secondaty-font);
+}
+
+.logo--blue {
+  color: var(--accent-color);
+}
+
+.footer__link {
+  font-family: var(--secondaty-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white-color);
+
+  display: block;
+  margin-bottom: 20px;
+}
