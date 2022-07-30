@@ -9,8 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,46 +20,88 @@
     />
   </head>
 
-  <body>
-<!-- shapka -->
-<header class="header header--line">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav__logo link" href="./index.html"
-        ><span class="logo--blue">Web</span>Studio</a
-      >
-      <ul class="nav__list ul">
-        <li class="nav__item">
-          <a class="nav__link link nav--current-link" href="./index.html">Студия</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link link " href="./portfolio.html">Портфолио</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link link" href="...">Контакты</a>
-        </li>
-      </ul>
-      <ul class="nav-contacts ul">
-        <li class="contacts__item">
-          <a class="contacts__link link" href="mailto:info@devstudio.com">
-            <svg class=" contacts__icon" width="16px" height="12px">
-              <use href="./images/svg/icons.svg#icon-envelope"></use>
+  <body class="no-scroll" data-body>
+    <!-- shapka -->
+    <header class="header header--line">
+      <div class="container">
+        <nav class="nav">
+          <a class="nav__logo  link" href="./index.html"
+            ><span class="logo--blue">Web</span>Studio</a
+          >
+          <ul class="nav__list ul">
+            <li class="nav__item">
+              <a class="nav__link link nav--current-link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link link" href="...">Контакты</a>
+            </li>
+          </ul>
+          <ul class="nav-contacts ul">
+            <li class="contacts__item">
+              <a class="contacts__link link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16px" height="12px">
+                  <use href="./images/svg/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link link" href="tel:+380961111111">
+                <svg class="contacts__icon" height="16" width="10">
+                  <use href="./images/svg/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <button class="mobile-menu__btn" type="button" data-menu-button>
+            <svg class="mobile-menu__icon" width="24px" height="16px">
+              <use class="mobile-menu-burger" href="./images/svg/icons.svg#icon-menu_24px"></use>
+              <use class="mobile-menu-close" href="./images/svg/icons.svg#icon-close_24px"></use>
             </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a class="contacts__link link" href="tel:+380961111111">
-            <svg class=" contacts__icon" height="16" width="10">
-              <use href="./images/svg/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+          </button>
+          <!-- menu-burger -->
+          <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu-nav ul">
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link current link" href="">Студія</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link link" href="">Портфоліо</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link link" href="">Контакти</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-contacts ul">
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link mobile-menu-contacts__link--tel link" href="">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link link" href="">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-socia ul">
+              <li class="mobile-menu-socia__item">
+                <a class="mobile-menu-socia__link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu-socia__item">
+                <a class="mobile-menu-socia__link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu-socia__item">
+                <a class="mobile-menu-socia__link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu-socia__item">
+                <a class="mobile-menu-socia__link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- main -->
     <main>
       <!-- HERO -->
@@ -74,8 +116,8 @@
       <section class="benefits section">
         <div class="container">
           <h2 class="title visibility-hidden">Преимущества</h2>
-          <ul class="benefits__list ul">
-            <li class="benefits__item">
+          <ul class="benefits__list card-set ul">
+            <li class="benefits__item card-item">
               <div class="benefits__icon">
                 <svg class="icon-antenna-1" width="65px" height="70px">
                   <use href="./images/svg/icons.svg#icon-antenna-1"></use>
@@ -86,7 +128,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item card-item">
               <div class="benefits__icon">
                 <svg class="icon-antenna-1" width="65px" height="70px">
                   <use href="./images/svg/icons.svg#icon-clock-1"></use>
@@ -97,7 +139,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item card-item">
               <div class="benefits__icon">
                 <svg class="icon-antenna-1" width="65px" height="70px">
                   <use href="./images/svg/icons.svg#icon-diagram-1"></use>
@@ -108,7 +150,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item card-item">
               <div class="benefits__icon">
                 <svg class="icon-antenna-1" width="65px" height="70px">
                   <use href="./images/svg/icons.svg#icon-astronaut-1"></use>
@@ -152,8 +194,8 @@
       <section class="team section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="team__list ul">
-            <li class="team__item">
+          <ul class="team__list card-set ul">
+            <li class="team__item card-item">
               <img src="./images/img.jpg" alt=" Irog Demyanenko" width="270" height="260" />
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__descr">Product Designer</p>
@@ -188,7 +230,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item">
+            <li class="team__item card-item">
               <img src="./images/img(1)_(1).jpg" alt="Olga Repina" width="270" height="260" />
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__descr">Frontend Developer</p>
@@ -223,7 +265,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item">
+            <li class="team__item card-item">
               <img src="./images/img(2)_(1).jpg" alt="Nikolay Tarasov" width="270" height="260" />
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__descr">Marketing</p>
@@ -258,7 +300,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item">
+            <li class="team__item card-item">
               <img src="./images/img(3)_(1).jpg" alt="Michail Yermakov" width="270" height="260" />
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__descr">UI Designer</p>
@@ -362,10 +404,14 @@
           <address class="address">
             <ul class="address__list ul">
               <li>
-                <a class=" address__link address__map--color link" href=""> г. Киев, пр-т Леси Украинки, 26</a>
+                <a class="address__link address__map--color link" href="">
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li>
-                <a class="address__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="address__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li>
                 <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -383,7 +429,7 @@
                 </svg>
               </a>
             </li>
-            <li class="media__item ">
+            <li class="media__item">
               <a class="media__link media__link--footer" href="">
                 <svg class="media__icon" width="20px" height="20px">
                   <use href="./images/svg/icons.svg#icon-twitter-1"></use>
@@ -482,7 +528,12 @@
           </div>
           <div class="form-agree">
             <label class="form-agree__label">
-              <input class="agree-input visibility-hidden" type="checkbox" name="user-agreement" required />
+              <input
+                class="agree-input visibility-hidden"
+                type="checkbox"
+                name="user-agreement"
+                required
+              />
               <span class="agree-checkbox">
                 <svg width="16px" height="15px">
                   <use href="./images/svg/icons.svg#icon-Vector"></use>
@@ -498,6 +549,8 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

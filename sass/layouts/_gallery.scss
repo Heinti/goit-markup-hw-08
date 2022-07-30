@@ -1,20 +1,39 @@
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
+.gallery {
+  
+  --items: 1;
+
+  @media screen and(min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and(min-width: 1200px) {
+    --items: 3;
+  }
 }
 
-.card-item {
-  justify-content: center;
-  align-items: center;
-  flex-basis: calc(100% - var(--indent) * var(--items) - 1 / var(--items));
-
-  
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    width: 450px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200x) {
+    width: 370px;
+  }
+
+
+}
+
+.gallery__item--shadow:hover,
+.gallery__item--shadow:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
   transition: var(--anim);
 }
 
@@ -33,6 +52,12 @@
 
 .gallery__link {
   display: block;
+
+  &--grow{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .gallery__img {
@@ -69,6 +94,9 @@
 }
 
 .gallery-div {
+  &--grow{
+    flex-grow: 1;
+  }
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;

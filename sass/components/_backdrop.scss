@@ -12,6 +12,7 @@
     pointer-events: initial;
   
     transition: var(--anim);
+    z-index: 100;
   }
   
   .backdrop.is-hidden {

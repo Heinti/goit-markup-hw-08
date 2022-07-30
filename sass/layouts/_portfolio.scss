@@ -4,14 +4,24 @@
 
 /* ----------------- */
 
+
 .portfolio-section {
   background-color: var(--white-bg-color);
+  
 }
 
 .portfolio-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and(max-width: 767px) {
+  
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 15px;
+    row-gap: 8px;
+  }
 }
 
 .portfolio-btn {
