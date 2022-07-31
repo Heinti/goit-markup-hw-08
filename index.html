@@ -20,12 +20,12 @@
     />
   </head>
 
-  <body class="no-scroll" data-body>
+  <body data-body>
     <!-- shapka -->
     <header class="header header--line">
       <div class="container">
         <nav class="nav">
-          <a class="nav__logo  link" href="./index.html"
+          <a class="nav__logo link" href="./index.html"
             ><span class="logo--blue">Web</span>Studio</a
           >
           <ul class="nav__list ul">
@@ -67,10 +67,10 @@
           <div class="mobile-menu" data-menu>
             <ul class="mobile-menu-nav ul">
               <li class="mobile-menu-nav__item">
-                <a class="mobile-menu-nav__link current link" href="">Студія</a>
+                <a class="mobile-menu-nav__link current link" href="./index.html">Студія</a>
               </li>
               <li class="mobile-menu-nav__item">
-                <a class="mobile-menu-nav__link link" href="">Портфоліо</a>
+                <a class="mobile-menu-nav__link link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="mobile-menu-nav__item">
                 <a class="mobile-menu-nav__link link" href="">Контакти</a>
@@ -78,7 +78,9 @@
             </ul>
             <ul class="mobile-menu-contacts ul">
               <li class="mobile-menu-contacts__item">
-                <a class="mobile-menu-contacts__link mobile-menu-contacts__link--tel link" href="">+38 096 111 11 11</a>
+                <a class="mobile-menu-contacts__link mobile-menu-contacts__link--tel link" href=""
+                  >+38 096 111 11 11</a
+                >
               </li>
               <li class="mobile-menu-contacts__item">
                 <a class="mobile-menu-contacts__link link" href="">info@devstudio.com</a>
@@ -170,19 +172,40 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="working__list ul">
             <li class="work__img">
-              <img src="./images/box_1.jpg" alt="working" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/doing/doing-1.jpg 1x, ./images/doing/doing-1@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/doing/doing-1.jpg" alt="working" width="370" height="294" />
+              </picture>
               <div class="work-img__box">
                 <p class="work-img__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__img">
-              <img src="./images/box_2.jpg" alt="working" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/doing/doing-2.jpg 1x, ./images/doing/doing-2@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/doing/doing-2.jpg" alt="working" width="370" height="294" />
+              </picture>
               <div class="work-img__box">
                 <p class="work-img__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__img">
-              <img src="./images/box_3.jpg" alt="working" width="370" height="294" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/doing/doing-3.jpg 1x, ./images/doing/doing-3@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/doing/doing-3.jpg" alt="working" width="370" height="294" />
+              </picture>
               <div class="work-img__box">
                 <p class="work-img__text">Дизайнерские решения</p>
               </div>
@@ -196,7 +219,26 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list card-set ul">
             <li class="team__item card-item">
-              <img src="./images/img.jpg" alt=" Irog Demyanenko" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-1-lg.jpg 1x, ./images/team/team-1-lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-4-md.jpg 1x, ./images/team/team-4-md.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-1-sm.jpg 1x, ./images/team/team-1-sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/team/team-1-sm.jpg" alt="Irog Demyanenko" width="450" height="460" />
+              </picture>
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__descr">Product Designer</p>
               <ul class="sotial-media ul">
@@ -231,7 +273,27 @@
               </ul>
             </li>
             <li class="team__item card-item">
-              <img src="./images/img(1)_(1).jpg" alt="Olga Repina" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-2-lg.jpg 1x, ./images/team/team-2-lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-3-md.jpg 1x, ./images/team/team-3-md.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-2-sm.jpg 1x, ./images/team/team-2-sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/team/team-1-sm.jpg" alt="Olga Repina" width="450" height="460" />
+              </picture>
+ 
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__descr">Frontend Developer</p>
               <ul class="sotial-media ul">
@@ -266,7 +328,27 @@
               </ul>
             </li>
             <li class="team__item card-item">
-              <img src="./images/img(2)_(1).jpg" alt="Nikolay Tarasov" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-3-lg.jpg 1x, ./images/team/team-3-lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-2-md.jpg 1x, ./images/team/team-2-md.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-3-sm.jpg 1x, ./images/team/team-3-sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/team/team-3-sm.jpg" alt="Nikolay Tarasov" width="450" height="460" />
+              </picture>
+
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__descr">Marketing</p>
               <ul class="sotial-media ul">
@@ -301,7 +383,26 @@
               </ul>
             </li>
             <li class="team__item card-item">
-              <img src="./images/img(3)_(1).jpg" alt="Michail Yermakov" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-4-lg.jpg 1x, ./images/team/team-4-lg.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-1-md.jpg 1x, ./images/team/team-1-md.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-4-sm.jpg 1x, ./images/team/team-4-sm.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/team/team-4-sm.jpg" alt="Michail Yermakov" width="450" height="460" />
+              </picture>
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__descr">UI Designer</p>
               <ul class="sotial-media ul">
@@ -342,8 +443,8 @@
       <section class="customers section">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
-          <ul class="customers__list ul">
-            <li class="cust__item">
+          <ul class="customers__list card-set ul">
+            <li class="cust__item card-item">
               <a class="cust__link link" href="">
                 <svg class="cust__icon" width="41px" height="47px">
                   <use href="./images/svg/icons.svg#icon-group"></use>
@@ -351,7 +452,7 @@
               </a>
             </li>
 
-            <li class="cust__item">
+            <li class="cust__item card-item">
               <a class="cust__link link" href="">
                 <svg class="cust__icon" width="40px" height="52px">
                   <use href="./images/svg/icons.svg#icon-group-1"></use>
@@ -359,7 +460,7 @@
               </a>
             </li>
 
-            <li class="cust__item">
+            <li class="cust__item card-item">
               <a class="cust__link link" href="">
                 <svg class="cust__icon" width="43px" height="41px">
                   <use href="./images/svg/icons.svg#icon-group-2"></use>
@@ -367,7 +468,7 @@
               </a>
             </li>
 
-            <li class="cust__item">
+            <li class="cust__item card-item">
               <a class="cust__link link" href="">
                 <svg class="cust__icon" width="84px" height="41px">
                   <use href="./images/svg/icons.svg#icon-group-3"></use>
@@ -375,7 +476,7 @@
               </a>
             </li>
 
-            <li class="cust__item">
+            <li class="cust__item card-item">
               <a class="cust__link link" href="">
                 <svg class="cust__icon" width="63px" height="45px">
                   <use href="./images/svg/icons.svg#icon-group-4"></use>
@@ -383,7 +484,7 @@
               </a>
             </li>
 
-            <li class="cust__item">
+            <li class="cust__item card-item">
               <a class="cust__link link" href="">
                 <svg class="cust__icon" width="94px" height="44px">
                   <use href="./images/svg/icons.svg#icon-group-5"></use>

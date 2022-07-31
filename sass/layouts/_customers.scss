@@ -3,24 +3,34 @@
   flex-wrap: wrap;
   gap: var(--indent);
   justify-content: center;
+
+  --items: 2;
+
+  @media screen and(min-width: 768px) {
+    --items: 3;
+  }
+
+  @media screen and(min-width: 1200px) {
+    --items: 6;
+}
 }
 
 .cust__item {
   display: flex;
-  width: 210px;
+  // width: 210px;
   height: 92px;
 
   align-items: center;
 
   transition: var(--anim);
 
-  @media screen and(min-width: 768px) {
-    width: 226px;
-  }
+  // @media screen and(min-width: 768px) {
+  //   width: 226px;
+  // }
 
-  @media screen and(min-width: 1200px) {
-    width: 170px;
-  }
+  // @media screen and(min-width: 1200px) {
+  //   width: 170px;
+  // }
 }
 
 .cust__link {

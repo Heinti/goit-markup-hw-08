@@ -3,7 +3,11 @@
 .working__section {
     padding-top: 0;
     background-color: var(--white-bg-color);
-    display: none;
+
+    @media screen and(max-width:1199px) {
+      display: none;
+      
+    }
   }
   
   .working__list {

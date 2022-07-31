@@ -56,6 +56,48 @@
               </a>
             </li>
           </ul>
+          <button class="mobile-menu__btn" type="button" data-menu-button>
+            <svg class="mobile-menu__icon" width="24px" height="16px">
+              <use class="mobile-menu-burger" href="./images/svg/icons.svg#icon-menu_24px"></use>
+              <use class="mobile-menu-close" href="./images/svg/icons.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <!-- menu-burger -->
+          <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu-nav ul">
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link  link" href="./index.html">Студія</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link current link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link link" href="">Контакти</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-contacts ul">
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link mobile-menu-contacts__link--tel link" href="">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu-contacts__item">
+                <a class="mobile-menu-contacts__link link" href="">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-socia ul">
+              <li class="mobile-menu-socia__item">
+                <a class="mobile-menu-socia__link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu-socia__item">
+                <a class="mobile-menu-socia__link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu-socia__item">
+                <a class="mobile-menu-socia__link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu-socia__item">
+                <a class="mobile-menu-socia__link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -86,12 +128,28 @@
             <li class="card-item --grow gallery__item gallery__item--shadow ">
               <a href="" class="gallery__link gallery__link--grow link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(13).jpg"
-                    alt="photo 1"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-1_lg.jpg 1x, ./images/gallery/gallery-1_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-1_md.jpg 1x, ./images/gallery/gallery-1_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-1_sm.jpg 1x, ./images/gallery/gallery-1_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-1_sm.jpg" alt="photo-1" width="450" height="294" />
+                  </picture>
+
+
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -107,12 +165,26 @@
             <li class="card-item gallery__item gallery__item--shadow">
               <a href="" class="gallery__link link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(14).jpg"
-                    alt="photo 2"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-2_lg.jpg 1x, ./images/gallery/gallery-2_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-2_md.jpg 1x, ./images/gallery/gallery-2_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-2_sm.jpg 1x, ./images/gallery/gallery-2_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-2_sm.jpg" alt="photo-2" width="450" height="294" />
+                  </picture>
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -129,12 +201,26 @@
             <li class="card-item gallery__item gallery__item--shadow">
               <a href="" class="gallery__link link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(15).jpg"
-                    alt="photo 3"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-3_lg.jpg 1x, ./images/gallery/gallery-3_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-3_md.jpg 1x, ./images/gallery/gallery-3_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-3_sm.jpg 1x, ./images/gallery/gallery-3_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-3_sm.jpg" alt="photo-3" width="450" height="294" />
+                  </picture>
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -150,12 +236,26 @@
             <li class="card-item gallery__item gallery__item--shadow">
               <a href="" class="gallery__link link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(16).jpg"
-                    alt="photo 4"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-4_lg.jpg 1x, ./images/gallery/gallery-4_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-4_md.jpg 1x, ./images/gallery/gallery-4_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-4_sm.jpg 1x, ./images/gallery/gallery-4_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-4_sm.jpg" alt="photo-4" width="450" height="294" />
+                  </picture>
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -171,12 +271,26 @@
             <li class="card-item gallery__item gallery__item--shadow">
               <a href="" class="gallery__link link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(18).jpg"
-                    alt="photo 5"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-5_lg.jpg 1x, ./images/gallery/gallery-5_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-5_md.jpg 1x, ./images/gallery/gallery-5_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-5_sm.jpg 1x, ./images/gallery/gallery-5_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-5_sm.jpg" alt="photo-5" width="450" height="294" />
+                  </picture>
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -192,12 +306,26 @@
             <li class="card-item gallery__item gallery__item--shadow">
               <a href="" class="gallery__link link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(17).jpg"
-                    alt="photo 6"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-6_lg.jpg 1x, ./images/gallery/gallery-6_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-6_md.jpg 1x, ./images/gallery/gallery-6_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-6_sm.jpg 1x, ./images/gallery/gallery-6_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-6_sm.jpg" alt="photo-6" width="450" height="294" />
+                  </picture>
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -213,12 +341,26 @@
             <li class="card-item gallery__item gallery__item--shadow">
               <a href="" class="gallery__link link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(10).jpg"
-                    alt="photo 7"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-7_lg.jpg 1x, ./images/gallery/gallery-7_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-7_md.jpg 1x, ./images/gallery/gallery-7_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-7_sm.jpg 1x, ./images/gallery/gallery-7_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-7_sm.jpg" alt="photo-7" width="450" height="294" />
+                  </picture>
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -234,12 +376,26 @@
             <li class="card-item gallery__item gallery__item--shadow">
               <a href="" class="gallery__link link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(11).jpg"
-                    alt="photo 8"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-8_lg.jpg 1x, ./images/gallery/gallery-8_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-8_md.jpg 1x, ./images/gallery/gallery-8_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-8_sm.jpg 1x, ./images/gallery/gallery-8_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-8_sm.jpg" alt="photo-8" width="450" height="294" />
+                  </picture>
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -255,12 +411,26 @@
             <li class="card-item gallery__item gallery__item--shadow">
               <a href="" class="gallery__link link">
                 <div class="gallery__img">
-                  <img
-                    src="./images/studio pics/img_(12).jpg"
-                    alt="photo 9"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/gallery/gallery-9_lg.jpg 1x, ./images/gallery/gallery-9_lg.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/gallery/gallery-9_md.jpg 1x, ./images/gallery/gallery-9_md.jpg 2x"
+                      type="image/jpg"
+                    />
+    
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/gallery/gallery-9_sm.jpg 1x, ./images/gallery/gallery-9_sm.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/gallery/gallery-9_sm.jpg" alt="photo-9" width="450" height="294" />
+                  </picture>
                   <p class="gallery__hover">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -351,5 +521,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

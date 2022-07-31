@@ -5,27 +5,34 @@
   
   
   .benefits__list {
-    display: flex;
+    // display: flex;   
+  --items: 1;
 
+  @media screen and(min-width: 768px) {
+    --items: 2;
+  }
 
-    @media screen and (min-width:1200px) {
+  @media screen and(min-width: 1200px) {
+    --items: 4;
+  }
+    // @media screen and (min-width:1200px) {
       
-      justify-content: space-around;
-      display: flex;
+    //   justify-content: space-around;
+    //   display: flex;
       
-    }
+    // }
   }
   
   .benefits__item {
-    max-width: 450px;
+    // max-width: 450px;
 
-    @media screen and(min-width: 768px) {
-      max-width: 354px;
-    }
+    // @media screen and(min-width: 768px) {
+    //   max-width: 354px;
+    // }
 
-    @media screen and(min-width: 1200px) {
-      max-width: 270px;
-    }
+    // @media screen and(min-width: 1200px) {
+    //   max-width: 270px;
+    // }
   }
   
   .benefits__icon {
